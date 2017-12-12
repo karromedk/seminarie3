@@ -37,6 +37,7 @@ class MeatballPage extends AbstractRequestHandler {
 
 
 	protected function doExecute() {
+		$this->session->restart();
 
 		$comments = new \seminarie\Controll\Comment();
 
